@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700;900&display=swap");
+/*
+  TODO: 
+ ✅ use BEM
+ ✅ change image height
+ ✅ change h2 and paragraph width
+ 🔳 Add README
+ 🔳 Steal some of it
+ */
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+html,
+*,
+*::after,
+*::before {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.card {
+  background-color: var(--white);
+  box-shadow: 1px 1px 10px var(--grayish-blue);
+  border: 1px solid var(--light-gray);
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20rem;
+  height: 31rem;
+  padding: 1rem;
+}
+
+.card__img {
+  border-radius: 0.7rem;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.4rem;
+}
+
+.card__info {
+  max-width: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__header {
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  word-spacing: 1.1;
+}
+
+.card__description {
+  color: var(--grayish-blue);
+}
+
+/* @media (min-width: 1440px) { */
+/*   .card { */
+/*   } */
+/* } */

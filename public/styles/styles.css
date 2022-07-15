@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700;900&display=swap");
-/*
-  TODO: 
- ✅ use BEM
- ✅ change image height
- ✅ change h2 and paragraph width
- 🔳 Add README
- 🔳 Steal some of it
- */
 
 :root {
   --white: hsl(0, 0%, 100%);
@@ -19,7 +11,6 @@ html,
 *,
 *::after,
 *::before {
-  font-family: "Outfit", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 15px;
@@ -27,10 +18,12 @@ html,
 }
 
 body {
+  font-family: "Outfit", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--light-gray);
+  height: 100vh;
 }
 
 .card {
